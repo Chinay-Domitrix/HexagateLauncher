@@ -1,21 +1,19 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "hexagatelauncher",
+  "version": "0.1",
+  "description": "The official launcher project for Hexagate Studios.",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/Hexgate-Studios/HexagateLauncher",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "HexagateLauncher",
+    "games"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "AgentLoneStar007",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^21.1.1"
   }
