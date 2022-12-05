@@ -1,7 +1,46 @@
 /* styles.css */
+@font-face {
+    font-family: "astroSpace";
+    src: url("./assets/fonts/AstroSpace.ttf");
+}
 
-.background {
-    background: url('file://assets/background.jpg');
+@font-face {
+    font-family: "atmospheric";
+    src: url("./assets/fonts/Atmospheric.ttf");
+}
+
+@font-face {
+    font-family: "aboveRegular";
+    src: url("./assets/fonts/AboveRegular.ttf");
+}
+
+@font-face {
+    font-family: "neoteric";
+    src: url("./assets/fonts/Neoteric.ttf");
+}
+
+@font-face {
+    font-family: "neotericBold";
+    src: url("./assets/fonts/NeotericBold.ttf");
+}
+
+/* */
+body {
+    background-image: url("./assets/images/background.jpg")
+}
+
+
+#header {
+    font-family: "astroSpace";
+    color: white;
+    font-size: 41px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
 }
 
 /* Add styles here to customize the appearance of your app */

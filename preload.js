@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   this.load.image('background', 'assets/background.jpg');
    */
 
-  console.log(pathToFileURL('/assets/background.jpg'));
+  /**console.log(pathToFileURL('/assets/background.jpg'));*/
 
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector)
