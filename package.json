@@ -1,20 +1,32 @@
 {
-  "name": "hexagatelauncher",
-  "version": "0.1",
-  "description": "The official launcher project for Hexagate Studios.",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": "https://github.com/Hexgate-Studios/HexagateLauncher",
-  "keywords": [
-    "Electron",
-    "HexagateLauncher",
-    "games"
-  ],
-  "author": "AgentLoneStar007",
-  "license": "MIT",
-  "devDependencies": {
-    "electron": "^21.1.1"
-  }
+	"name": "hexagatelauncher",
+	"version": "0.1",
+	"description": "The official launcher project for Hexagate Studios.",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron ."
+	},
+	"repository": "https://github.com/Hexgate-Studios/HexagateLauncher",
+	"keywords": [
+		"Electron",
+		"HexagateLauncher",
+		"games"
+	],
+	"author": "AgentLoneStar007",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/prettier": "^2.7.2",
+		"electron": "^22.0.3",
+		"prettier": "^2.8.3"
+	},
+	"prettier": {
+		"arrowParens": "avoid",
+		"bracketSameLine": true,
+		"endOfLine": "lf",
+		"semi": true,
+		"singleQuote": false,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true
+	}
 }
