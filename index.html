@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-	<meta http-equiv="Content-Security-Policy"
-	      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'" lang="en-US">
-	<link href="./styles.css" rel="stylesheet">
-	<title>Hexagate Launcher</title>
-</head>
-<body>
-<h1 id="header" class="center">Hexagate Launcher</h1>
-<script src="./renderer.js"></script>
-</body>
+<html>
+  <head>
+    <!--Set some page stuff-->
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'" lang="en-US">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Hexagate Launcher</title>
+
+    <!--Actual content of app; might move this back to <body>.-->
+    <div class="topbar">
+      <h1 id="header" class="center">Hexagate Launcher</h1>
+    </div>
+
+  </head>
+
+  <body>
+    <!--Code for bottom bar-->
+    <div class="navbar">
+		  <div id="playbuttondiv"><a href="#play", id="playbutton">PLAY</a></div>
+	  </div>
+
+    <!--Run the renderer - this needs to be at the bottom of the app content-->
+    <script src="./renderer.js"></script>
+  </body>
 </html>

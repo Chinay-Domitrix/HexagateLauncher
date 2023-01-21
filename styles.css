@@ -1,46 +1,92 @@
-/* styles.css */
+/* Declare some fonts */
 @font-face {
-	font-family: "astroSpace";
-	src: url("./assets/fonts/AstroSpace.ttf");
+    font-family: "astroSpace";
+    src: url("./assets/fonts/AstroSpace.ttf");
 }
 
 @font-face {
-	font-family: "atmospheric";
-	src: url("./assets/fonts/Atmospheric.ttf");
+    font-family: "atmospheric";
+    src: url("./assets/fonts/Atmospheric.ttf");
 }
 
 @font-face {
-	font-family: "aboveRegular";
-	src: url("./assets/fonts/AboveRegular.ttf");
+    font-family: "aboveRegular";
+    src: url("./assets/fonts/AboveRegular.ttf");
 }
 
 @font-face {
-	font-family: "neoteric";
-	src: url("./assets/fonts/Neoteric.ttf");
+    font-family: "neoteric";
+    src: url("./assets/fonts/Neoteric.ttf");
 }
 
 @font-face {
-	font-family: "neotericBold";
-	src: url("./assets/fonts/NeotericBold.ttf");
+    font-family: "neotericBold";
+    src: url("./assets/fonts/NeotericBold.ttf");
 }
 
-/* */
+/* Not commenting much in this file due to CSS being pretty verbose, and the fact
+I name most ID's and classes accordingly. */
 body {
-	background-image: url("./assets/images/background.jpg")
+    background-image: url("./assets/images/background.jpg");
 }
-
 
 #header {
-	font-family: "astroSpace", fantasy;
-	color: white;
-	font-size: 41px;
+    font-family: "astroSpace";
+    color: white;
+    font-size: 41px;
 }
 
+/* A centering class, currently only used for the header. Could be recycled for other
+purposes as needed. */
 .center {
-	margin: auto;
-	width: 50%;
-	border: 3px solid green;
-	padding: 10px;
+    margin: auto;
+    width: 50%;
+    border: 3px transparent;
+    padding: 10px;
 }
 
-/* Add styles here to customize the appearance of your app */
+.topbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Navbar being bottom bar */
+.navbar {
+	background-color: #333;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+  
+#playbuttondiv a {
+	display: block;
+	background-color: #6d0dc7;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border: 3px transparent;
+	font-size: 17px;
+    font-family: "atmospheric";
+	margin: 0 auto;
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  	width: 90px;
+  	height: 20px;
+    /* Stuff for fading */
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+/* Set the hover background color, and the correct opacity so the fading effect
+will work. */
+#playbutton:hover {
+    background-color: #8f27f0;
+    opacity: 1;
+}
+
